@@ -1,0 +1,31 @@
+Tool for KiCad
+
+Quick update for setting up FreeRouting for KiCad
+
+________________________________________________________
+
+pdate da java on ya linux build.   Windows do ya java updates or head over to java.com and download a fresh java.. (Note not your average cup of mud/joe! just saying... )
+
+from Oracle...  Grab the JRE (SE Runtime Java)Latest...   Worse case you may need JDK (SE Development Java)
+http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+
+
+For those Lunux folk you can also do this flavor.. Under linux CLI / Terminal session.. 
+$ sudo apt-get install openjdk-8-jre-headless
+
+after that all said and done.. 
+
+Head over to the other Git location: 
+https://github.com/jafo2128/freerouting-1
+ in the binaries folder... 
+https://github.com/jafo2128/freerouting-1/tree/master/binaries
+
+grab the java or executable file and away one goes.. !!
+
+First make sure you export your KiCad board file as .dsn from FILE>EXPORT>Specctra DSN
+
+Then run
+
+java -jar FreeRouting.jar
+
+Open you .dsn file and click Autorouter!  So they say.. (Reference taken from "http://psychoul.com/general/autoroute-pcbs-in-kicad-offline ")
